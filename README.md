@@ -1,8 +1,8 @@
 # HipTruck Frontend Guideline
 
-___Note___: this guideline represents bullet points in descending order of their importance.
+* This guideline represents bullet points in descending order of their importance.
 
-* This guideline is just a summary from well-known styleguides from [GitHub (CSS, HTML)](https://github.com/styleguide) and [CSSguidelin.es](http://cssguidelin.es/).
+* This guideline is just a summary of the well-known styleguides, [GitHub (CSS, HTML)](https://github.com/styleguide) and [CSSguidelin.es](http://cssguidelin.es/).
 
 * HTML and CSS are not painful. They only are when you make them so.
 
@@ -117,6 +117,17 @@ ___Note___: this guideline represents bullet points in descending order of their
 
 ## Ethic (optional but recommended)
 * Follow [BEM-like Naming](http://cssguidelin.es/#bem-like-naming).
+  + Naming for a block (a parent): `.user-dropdown`
+  + Naming for children of the parent: `.user-dropdown__profile-image`, `.user-dropdown__username`
+  + Naming for a modifier of the parent: `.user-dropdown--disabled`
+
+  ``` html
+  <section class='user-dropdown'>
+    <img class='user-dropdown__profile-image'>
+    <span class='user-dropdown__username'>...</span>
+  </section>
+  ```
+  
 * Add [meaningful whitespaces](http://cssguidelin.es/#meaningful-whitespace):
   * One (1) empty line between closely related rulesets.
   * Five (5) empty lines between entirely new sections.
